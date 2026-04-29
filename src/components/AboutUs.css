@@ -1,0 +1,134 @@
+.about {
+  background: #ffffff;
+  padding: 56px 0 78px;
+  scroll-margin-top: 110px;
+}
+
+.about__container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 46px;
+  align-items: start;
+}
+
+.about__eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  color: #ff6a00;
+  margin-bottom: 16px;
+}
+
+.about__title {
+  display: inline-flex;
+  flex-direction: column;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(44px, 5.6vw, 72px);
+  line-height: 0.88;
+  letter-spacing: -0.02em;
+  color: #101820;
+  margin-bottom: 24px;
+}
+
+.about__title span {
+  color: #ff6a00;
+}
+
+.about__text {
+  font-family: 'Inter', sans-serif;
+  color: #4e5b66;
+  font-size: 15px;
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+
+.about__card {
+  border-radius: 20px;
+  border: 1px solid #ebebeb;
+  background: #ffffff;
+  box-shadow: 0 10px 40px rgba(16, 24, 32, 0.08);
+  overflow: hidden;
+}
+
+.about__image-wrap {
+  aspect-ratio: 16 / 10;
+  width: 100%;
+}
+
+.about__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about__stats {
+  padding: 20px;
+}
+
+.about__team {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: #101820;
+}
+
+.about__sub {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-family: 'Inter', sans-serif;
+  color: #7a8792;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+}
+
+.about__stat {
+  padding: 14px 14px;
+  border-right: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.about__stat strong {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #101820;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.about__stat span {
+  font-family: 'Inter', sans-serif;
+  color: #6d7882;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 980px) {
+  .about {
+    padding-top: 28px;
+  }
+
+  .about__container {
+    grid-template-columns: 1fr;
+  }
+
+  .about__text {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
