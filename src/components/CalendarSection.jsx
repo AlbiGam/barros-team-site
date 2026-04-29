@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './CalendarSection.css'
 import { useLang } from '../context/LangContext'
 
+const baseUrl = import.meta.env.BASE_URL
+
 const races = [
   {
     id: 'r1',
@@ -88,7 +90,7 @@ export default function CalendarSection() {
             </h2>
           </div>
           <div className="calendar__hero-img-wrap">
-            <img src="/images/calendar.jpeg" alt="BRT racing action" className="calendar__hero-img" />
+            <img src={`${baseUrl}images/calendar.jpeg`} alt="BRT racing action" className="calendar__hero-img" />
           </div>
         </div>
 

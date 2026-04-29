@@ -22,6 +22,8 @@ const ChevronDown = () => (
   </svg>
 )
 
+const baseUrl = import.meta.env.BASE_URL
+
 const MenuIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
     <line x1="3" y1="6" x2="21" y2="6" />
@@ -42,7 +44,7 @@ export default function Navbar() {
         {/* Left: Logo + socials */}
         <div className="navbar__left">
           <div className="navbar__logo">
-            <img src="/images/logo.jpeg" alt="Barros Racing Team logo" className="navbar__logo-image" />
+            <img src={`${baseUrl}images/logo.jpeg`} alt="Barros Racing Team logo" className="navbar__logo-image" />
           </div>
           <div className="navbar__socials">
             <a href="#" aria-label="Instagram" className="navbar__social-link">

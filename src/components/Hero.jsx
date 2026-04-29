@@ -1,6 +1,8 @@
 import './Hero.css'
 import { useLang } from '../context/LangContext'
 
+const baseUrl = import.meta.env.BASE_URL
+
 export default function Hero() {
   const { t } = useLang()
   return (
@@ -9,7 +11,7 @@ export default function Hero() {
       {/* To change the hero image: place your file in public/images/ and update the src below */}
       <div className="hero__image-wrap">
         <img
-          src="/images/main_picture.jpeg"
+          src={`${baseUrl}images/main_picture.jpeg`}
           alt="Barros Racing Team"
           className="hero__image"
           onError={(e) => { e.currentTarget.style.display = 'none' }}

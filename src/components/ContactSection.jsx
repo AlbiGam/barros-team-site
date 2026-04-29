@@ -1,6 +1,8 @@
 import './ContactSection.css'
 import { useLang } from '../context/LangContext'
 
+const baseUrl = import.meta.env.BASE_URL
+
 const MailIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
     <rect x="2" y="4" width="20" height="16" rx="3" />
@@ -16,7 +18,7 @@ export default function ContactSection() {
       <div className="contact__container">
         <div className="contact__image-col">
           <div className="contact__image-wrap">
-            <img src="/images/contact.jpeg" alt="Barros Racing Team contact" className="contact__image" />
+            <img src={`${baseUrl}images/contact.jpeg`} alt="Barros Racing Team contact" className="contact__image" />
           </div>
         </div>
 

@@ -1,6 +1,8 @@
 import './AboutUs.css'
 import { useLang } from '../context/LangContext'
 
+const baseUrl = import.meta.env.BASE_URL
+
 export default function AboutUs() {
   const { t } = useLang()
   const a = t.about
@@ -21,7 +23,7 @@ export default function AboutUs() {
 
         <aside className="about__card">
           <div className="about__image-wrap">
-            <img src="/images/about_us.jpeg" alt="Barros Racing Team kart in action" className="about__image" />
+            <img src={`${baseUrl}images/about_us.jpeg`} alt="Barros Racing Team kart in action" className="about__image" />
           </div>
 
           <div className="about__stats">

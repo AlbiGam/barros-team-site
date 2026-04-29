@@ -1,10 +1,12 @@
 import './PartnersSection.css'
 import { useLang } from '../context/LangContext'
 
+const baseUrl = import.meta.env.BASE_URL
+
 const partnersMeta = [
-  { name: 'OTK Kart Group', logo: '/images/otk_logo.jpeg',       logoAlt: 'OTK Kart Group logo' },
-  { name: 'Alfano',         logo: '/images/alfano_kart_pats.jpeg', logoAlt: 'Alfano logo' },
-  { name: 'AiMotor',        logo: '/images/aimotor_logo.jpg',     logoAlt: 'AiMotor logo', darkLogo: true },
+  { name: 'OTK Kart Group', logo: `${baseUrl}images/otk_logo.jpeg`,       logoAlt: 'OTK Kart Group logo' },
+  { name: 'Alfano',         logo: `${baseUrl}images/alfano_kart_pats.jpeg`, logoAlt: 'Alfano logo' },
+  { name: 'AiMotor',        logo: `${baseUrl}images/aimotor_logo.jpg`,     logoAlt: 'AiMotor logo', darkLogo: true },
 ]
 
 export default function PartnersSection() {
